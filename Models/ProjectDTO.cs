@@ -1,4 +1,4 @@
-namespace Portafolio.Models
+namespace Portfolio.Models
 {
     public class ProjectDTO
     {

@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using Portafolio.Models;
+using Portfolio.Models;
 using System.Net;
 using System.Net.Mail;
 
-namespace Portafolio.Services
+namespace Portfolio.Services
 {
     public interface IGmailService
     {

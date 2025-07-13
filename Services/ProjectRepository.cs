@@ -1,6 +1,6 @@
-using Portafolio.Models;
+using Portfolio.Models;
 
-namespace Portafolio.Services
+namespace Portfolio.Services
 {
     public interface IProjectRepository
     {

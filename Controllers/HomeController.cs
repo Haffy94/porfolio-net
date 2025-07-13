@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Portafolio.Models;
-using Portafolio.Services;
+using Portfolio.Models;
+using Portfolio.Services;
 
-namespace Portafolio.Controllers;
+namespace Portfolio.Controllers;
 
 public class HomeController : Controller
 {
