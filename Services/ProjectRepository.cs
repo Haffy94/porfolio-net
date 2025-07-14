@@ -23,6 +23,13 @@ namespace Portfolio.Services
             {
                 new ProjectDTO
                 {
+                    Title = _localizer["MariacelestebrunettiTitle"],
+                    Description = _localizer["MariacelestebrunettiDescription"],
+                    Link = "https://www.mariacelestebrunetti.com/",
+                    ImageURL = "/images/mariacelestebrunetti.png"
+                },
+                new ProjectDTO
+                {
                     Title = _localizer["AmazonTitle"],
                     Description = _localizer["AmazonDescription"],
                     Link = "https://www.amazon.com/",

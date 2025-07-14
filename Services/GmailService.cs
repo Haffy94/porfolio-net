@@ -31,9 +31,8 @@ namespace Portfolio.Services
 
             smtpClient.Credentials = new NetworkCredential(EmailSender, password);
             var message = new MailMessage(EmailSender, EmailSender,
-                $"Un nuevo cliente te ha contactado:{contact.Name}, su mail de contacto es {contact.Email}",
-                    contact.Message);
-
+                $"Un nuevo cliente te ha contactado:{contact.Name}",
+                $"mail de contacto {contact.Email}, Mensaje:{contact.Message}");
             await smtpClient.SendMailAsync(message);
         }
     }
