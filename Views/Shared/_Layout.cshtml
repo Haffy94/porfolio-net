@@ -18,7 +18,10 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Portfolio</a>
+                <a class="navbar-brand d-flex align-items-center gap-2 text-primary" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-briefcase"></i>
+                    @Localizer["Portfolio"]
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,13 +40,31 @@
                     </ul>
                     <div>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
                                 @Localizer["Language"]
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownIdioma">
-                                <li><a class="dropdown-item" href="?culture=es">@Localizer["Spanish"]</a></li>
-                                <li><a class="dropdown-item" href="?culture=en">@Localizer["English"]</a></li>
-                                <li><a class="dropdown-item" href="?culture=it">@Localizer["Italian"]</a></li>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownIdioma" style="min-width: auto;">
+                                <li>
+                                    <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-inline">
+                                        <input type="hidden" name="culture" value="es" />
+                                        <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+                                        <button type="submit" class="dropdown-item">@Localizer["Spanish"]</button>
+                                    </form>
+                                </li>
+                                <li>
+                                    <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-inline">
+                                        <input type="hidden" name="culture" value="en" />
+                                        <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+                                        <button type="submit" class="dropdown-item">@Localizer["English"]</button>
+                                    </form>
+                                </li>
+                                <li>
+                                    <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-inline">
+                                        <input type="hidden" name="culture" value="it" />
+                                        <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+                                        <button type="submit" class="dropdown-item">@Localizer["Italian"]</button>
+                                    </form>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -59,12 +80,13 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; @Localizer["Copyright"] - <a asp-area="" asp-controller="Home" asp-action="Privacy">@Localizer["Privacy"]</a>
+            &copy; @Localizer["Copyright"] - <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">@Localizer["Privacy"]</a>
         </div>
     </footer>  
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @await Html.PartialAsync("_PrivacyModal")
 </body>
 </html>

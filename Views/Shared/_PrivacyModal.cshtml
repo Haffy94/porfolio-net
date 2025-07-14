@@ -1,14 +1,16 @@
 @inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
 @using System.Globalization
 
-@{
-    ViewData["Title"] = Localizer["PrivacyPolicyTitle"];
-}
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
 
-<div class="row justify-content-md-center">
-    <div class="col-md-8 bg-light p-4 rounded privacy-container">
-        <h1 class="privacy-title">@Localizer["PrivacyPolicyTitle"]</h1>
-
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title privacy-title" id="privacyModalLabel">@Localizer["PrivacyPolicyTitle"]</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
         <p><strong class="privacy-subtitle">@Localizer["WhoIamTitle"]</strong><br />
         @Localizer["WhoIamText"]</p>
 
@@ -32,5 +34,12 @@
 
         <p><strong class="privacy-subtitle">@Localizer["QuestionsTitle"]</strong><br />
         @Localizer["QuestionsText"]</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          @Localizer["Close"]
+        </button>
+      </div>
     </div>
+  </div>
 </div>

@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Portfolio.Models;
 using Portfolio.Services;
+using Microsoft.AspNetCore.Localization;
 
 namespace Portfolio.Controllers;
 
@@ -23,11 +24,6 @@ public class HomeController : Controller
         return View(model);
     }
 
-     public IActionResult Privacy()
-    {
-        return View();
-    }
-
     public IActionResult Projects()
     {
         var projects = projectRepository.GetProjectDTOs();
@@ -45,6 +41,21 @@ public class HomeController : Controller
     {
         await gmailService.SendContact(contactViewModel);
         return RedirectToAction("Thanks");
+    }
+
+    [HttpPost]
+    public IActionResult SetLanguage(string culture, string returnUrl)
+    {
+        Response.Cookies.Append(
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+            new CookieOptions
+            {
+                Expires = DateTimeOffset.UtcNow.AddYears(1)
+            }
+        );
+
+        return LocalRedirect(returnUrl);
     }
 
     public IActionResult Thanks()

@@ -33,15 +33,6 @@
     font-size: 50px;
 }
 
-.privacy-container {
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-size: 16px;
-    text-align: left;
-    background-color: #f8f9fa; 
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
 .privacy-title {
     color: #0d6efd;
     font-weight: bold;
@@ -54,4 +45,22 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 1rem;
+}
+
+/* Borde curvado solo lado derecho */
+.border-custom-right {
+  border-radius: 0 15px 15px 0;
+}
+
+/* Borde curvado solo lado izquierdo */
+.border-custom-left {
+  border-radius: 15px 0 0 15px;
+}
+
+/* En pantallas chicas, ambos tienen todos los bordes curvados */
+@media (max-width: 767.98px) {
+  .border-custom-right,
+  .border-custom-left {
+    border-radius: 15px !important;
+  }
 }

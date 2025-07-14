@@ -27,7 +27,12 @@ public static class LocalizationConfig
         {
             DefaultRequestCulture = new RequestCulture("en"),
             SupportedCultures = supportedCultures,
-            SupportedUICultures = supportedCultures
+            SupportedUICultures = supportedCultures,
+            RequestCultureProviders = new IRequestCultureProvider[]
+            {
+                new CookieRequestCultureProvider(),
+                new QueryStringRequestCultureProvider() 
+            }
         };
 
         app.UseRequestLocalization(localizationOptions);
