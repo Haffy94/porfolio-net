@@ -1,9 +1,12 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
 @model IEnumerable<ProjectDTO>
 
 @if (Model is not null) {
     <div class="text-center" style="padding-top: 6rem;">
-        <h1>Mis trabajos recientes</h1>
-        <p>Aqui puedes ver algunos de mis trabajos mas recientes</p>
+        <h1>@Localizer["RecentWorksTitle"]</h1>
+        <p>@Localizer["RecentWorksDescription"]</p>
     </div>
 
     <partial name="_ProjectsList" model="Model" />

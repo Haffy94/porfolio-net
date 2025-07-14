@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PrivacyPolicyTitle" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="WhoIamTitle" xml:space="preserve">
+    <value>Who I am and how I handle your data</value>
+  </data>
+  <data name="WhoIamText" xml:space="preserve">
+    <value>I’m Lucas Hafner, and this is my personal page where I showcase my projects. I want you to know that I respect your privacy and the only data I ask for is your email when you use the contact form.</value>
+  </data>
+  <data name="WhatDataTitle" xml:space="preserve">
+    <value>What data I collect</value>
+  </data>
+  <data name="WhatDataText" xml:space="preserve">
+    <value>I only collect your email when you leave it in the form so I can respond to you.</value>
+  </data>
+  <data name="EmailUsageTitle" xml:space="preserve">
+    <value>What I use your email for</value>
+  </data>
+  <data name="EmailUsageText" xml:space="preserve">
+    <value>I use your email exclusively to reply to your messages and inquiries, and to contact you about topics related to my projects if necessary.</value>
+  </data>
+  <data name="HowIProtectTitle" xml:space="preserve">
+    <value>How I protect your data</value>
+  </data>
+  <data name="HowIProtectText" xml:space="preserve">
+    <value>I safeguard your data with security measures to prevent unauthorized access or loss.</value>
+  </data>
+  <data name="NoSharingTitle" xml:space="preserve">
+    <value>I do not share your email</value>
+  </data>
+  <data name="NoSharingText" xml:space="preserve">
+    <value>Your email will not be sold or shared with anyone. I will only use it for the purposes I mentioned and nothing else.</value>
+  </data>
+  <data name="YourRightsTitle" xml:space="preserve">
+    <value>Your rights</value>
+  </data>
+  <data name="YourRightsText" xml:space="preserve">
+    <value>If you want me to delete or correct your email, just write to me at lucasezequielhafner@gmail.com and I will do it.</value>
+  </data>
+  <data name="CookiesUsageTitle" xml:space="preserve">
+    <value>Use of cookies</value>
+  </data>
+  <data name="CookiesUsageText" xml:space="preserve">
+    <value>This site may use cookies to improve your experience, but you can configure your browser to block them if you want.</value>
+  </data>
+  <data name="QuestionsTitle" xml:space="preserve">
+    <value>Questions?</value>
+  </data>
+  <data name="QuestionsText" xml:space="preserve">
+    <value>If you have any questions about how I handle your information, write to me at lucasezequielhafner@gmail.com</value>
+  </data>
+</root>

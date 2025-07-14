@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WelcomeTitle" xml:space="preserve">
+    <value>Bienvenidos a mi sitio</value>
+  </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Mi nombre es Lucas Ezequiel Hafner, soy un desarrollador especializado en .net y Javascript.</value>
+  </data>
+  <data name="TechnologiesTitle" xml:space="preserve">
+    <value>¿Que tecnologias manejo?</value>
+  </data>
+  <data name="TechnologiesDescription" xml:space="preserve">
+    <value>Te facilito un resumen de mi stack tecnologico</value>
+  </data>
+</root>

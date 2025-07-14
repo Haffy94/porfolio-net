@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+
+  <data name="AmazonTitle" xml:space="preserve">
+    <value>Amazon</value>
+  </data>
+  <data name="AmazonDescription" xml:space="preserve">
+    <value>Online store developed with ASP.NET</value>
+  </data>
+
+  <data name="NYTTitle" xml:space="preserve">
+    <value>The New York Times</value>
+  </data>
+  <data name="NYTDescription" xml:space="preserve">
+    <value>News website built with React</value>
+  </data>
+
+  <data name="SteamTitle" xml:space="preserve">
+    <value>Steam</value>
+  </data>
+  <data name="SteamDescription" xml:space="preserve">
+    <value>Video game distribution platform</value>
+  </data>
+</root>

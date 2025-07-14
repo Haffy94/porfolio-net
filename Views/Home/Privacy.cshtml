@@ -1,6 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
 
-<p>Use this page to detail your site's privacy policy.</p>
+@{
+    ViewData["Title"] = Localizer["PrivacyPolicyTitle"];
+}
+
+<div class="row justify-content-md-center">
+    <div class="col-md-8 bg-light p-4 rounded privacy-container">
+        <h1 class="privacy-title">@Localizer["PrivacyPolicyTitle"]</h1>
+
+        <p><strong class="privacy-subtitle">@Localizer["WhoIamTitle"]</strong><br />
+        @Localizer["WhoIamText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["WhatDataTitle"]</strong><br />
+        @Localizer["WhatDataText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["EmailUsageTitle"]</strong><br />
+        @Localizer["EmailUsageText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["HowIProtectTitle"]</strong><br />
+        @Localizer["HowIProtectText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["NoSharingTitle"]</strong><br />
+        @Localizer["NoSharingText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["YourRightsTitle"]</strong><br />
+        @Localizer["YourRightsText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["CookiesUsageTitle"]</strong><br />
+        @Localizer["CookiesUsageText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["QuestionsTitle"]</strong><br />
+        @Localizer["QuestionsText"]</p>
+    </div>
+</div>

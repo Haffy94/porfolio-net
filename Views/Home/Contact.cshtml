@@ -1,21 +1,24 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
 @{
-    ViewData["Title"] = "Contacto";
+    ViewData["Title"] = @Localizer["ContactTitle"];
 }
 
-<h1>Formulario de Contacto</h1>
+<h1>@Localizer["ContactForm"]</h1>
 
 <form asp-controller="Home" asp-action="Contact">
     <div class="mb-3">
-        <label for="name" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y apellido">
+        <label for="name" class="form-label">@Localizer["Name"]</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="@Localizer["NamePlaceholder"]">
     </div>
     <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Mail de contacto">
+        <label for="email" class="form-label">@Localizer["Email"]</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="@Localizer["EmailPlaceholder"]">
     </div>
     <div class="mb-3">
-        <label for="message" class="form-label">Mensaje</label>
+        <label for="message" class="form-label">@Localizer["Message"]</label>
         <textarea class="form-control" id="message" name="message" rows="3"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary">@Localizer["Send"]</button>
 </form>

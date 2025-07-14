@@ -1,4 +1,5 @@
 using Portfolio.Models;
+using Microsoft.Extensions.Localization;
 
 namespace Portfolio.Services
 {
@@ -6,34 +7,41 @@ namespace Portfolio.Services
     {
         List<ProjectDTO> GetProjectDTOs();
     }
-    public class ProjectRepository: IProjectRepository
+
+    public class ProjectRepository : IProjectRepository
     {
+        private readonly IStringLocalizer<ProjectRepository> _localizer;
+
+        public ProjectRepository(IStringLocalizer<ProjectRepository> localizer)
+        {
+            _localizer = localizer;
+        }
+
         public List<ProjectDTO> GetProjectDTOs()
         {
             return new List<ProjectDTO>()
             {
                 new ProjectDTO
                 {
-                    Title = "Amazon",
-                    Description = "E-commerce realizado en ASP.NET",
+                    Title = _localizer["AmazonTitle"],
+                    Description = _localizer["AmazonDescription"],
                     Link = "https://www.amazon.com/",
                     ImageURL = "/images/amazon.png"
                 },
                 new ProjectDTO
                 {
-                    Title = "The New york Time",
-                    Description = "Pagina de noticias en React",
-                    Link = "https://www.amazon.com/",
+                    Title = _localizer["NYTTitle"],
+                    Description = _localizer["NYTDescription"],
+                    Link = "https://www.nytimes.com/",
                     ImageURL = "/images/nyt.png"
                 },
                 new ProjectDTO
                 {
-                    Title = "Steam",
-                    Description = "Desarrollo de videojuegos",
-                    Link = "https://www.steam.com/",
+                    Title = _localizer["SteamTitle"],
+                    Description = _localizer["SteamDescription"],
+                    Link = "https://www.steampowered.com/",
                     ImageURL = "/images/steam.png"
-                },
-
+                }
             };
         }
     }

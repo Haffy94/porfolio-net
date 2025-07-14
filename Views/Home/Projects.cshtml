@@ -1,12 +1,15 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
 @model IEnumerable<ProjectDTO>
 
 @{
-    ViewData["Title"] = "Proyectos";
+    ViewData["Title"] = @Localizer["ProjectsTitle"];
 }
 
 <div class="container">
-    <h1>Mis Proyectos</h1>
-    <p>Aqui encontraras todos los Proyectos encontraras los que he trabajado</p>
+    <h1>@Localizer["MyProjects"]</h1>
+    <p>@Localizer["ProjectsDescription"]</p>
 </div>
 
 <partial name="_ProjectsList" model="Model" />

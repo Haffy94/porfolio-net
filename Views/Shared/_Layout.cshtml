@@ -1,9 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portfolio</title>
+    <title>@ViewData["Title"] - @Localizer["Portfolio"]</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -23,15 +26,27 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">Projectos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">@Localizer["Projects"]</a>
                         </li>
                         <li class="nav-item"></li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contacto</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">@Localizer["Contact"]</a>
                         </li> 
                     </ul>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+                                @Localizer["Language"]
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownIdioma">
+                                <li><a class="dropdown-item" href="?culture=es">@Localizer["Spanish"]</a></li>
+                                <li><a class="dropdown-item" href="?culture=en">@Localizer["English"]</a></li>
+                                <li><a class="dropdown-item" href="?culture=it">@Localizer["Italian"]</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -44,9 +59,9 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - Portfolio - <a asp-area="" asp-controller="Home" asp-action="Index">Privacy</a>
+            &copy; @Localizer["Copyright"] - <a asp-area="" asp-controller="Home" asp-action="Privacy">@Localizer["Privacy"]</a>
         </div>
-    </footer>
+    </footer>  
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

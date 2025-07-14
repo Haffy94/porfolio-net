@@ -1,3 +1,6 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
 @model IEnumerable<ProjectDTO>
 
 @if (Model is not null) {
@@ -14,7 +17,7 @@
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-primary" href="@Project.Link" target="_blank" 
-                            rel="noopener noreferrer">Visitar</a>
+                            rel="noopener noreferrer">@Localizer["Visit"]</a>
                         </div>
                     </div>
                 </div>

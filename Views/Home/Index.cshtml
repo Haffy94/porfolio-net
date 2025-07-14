@@ -1,7 +1,10 @@
-﻿@model HomeIndexViewModel
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
+@model HomeIndexViewModel
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = @Localizer["Home"];
 }
 
 <partial name="_Presentation" />
