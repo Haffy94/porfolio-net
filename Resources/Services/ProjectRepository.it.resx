@@ -142,11 +142,19 @@
     <comment/>
   </data>
   <data name="MariacelestebrunettiTitle" xml:space="preserve">
-    <value>Dra. María Celeste Brunetti</value>
+    <value>Dott.ssa Maria Celeste Brunetti</value>
     <comment/>
   </data>
   <data name="MariacelestebrunettiDescription" xml:space="preserve">
     <value>Landing page con integrazione di Calendly per una professionista sanitaria.</value>
+    <comment/>
+  </data>
+  <data name="MyPortfolioTitle" xml:space="preserve">
+    <value>Il mio portfolio personale</value>
+    <comment/>
+  </data>
+  <data name="MyPortfolioDescription" xml:space="preserve">
+    <value>Un portfolio dove puoi vedere i miei progetti e contattarmi</value>
     <comment/>
   </data>
 </root>

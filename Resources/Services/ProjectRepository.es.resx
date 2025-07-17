@@ -149,4 +149,12 @@
     <value>Landing page con integración de Calendly para una profesional de la salud.</value>
     <comment/>
   </data>
+  <data name="MyPortfolioTitle" xml:space="preserve">
+    <value>Mi portafolio personal</value>
+    <comment/>
+  </data>
+  <data name="MyPortfolioDescription" xml:space="preserve">
+    <value>Un portafolio donde podrás ver mis proyectos y contactarme</value>
+    <comment/>
+  </data>
 </root>
