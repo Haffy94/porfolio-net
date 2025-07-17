@@ -23,31 +23,17 @@ namespace Portfolio.Services
             {
                 new ProjectDTO
                 {
+                    Title = _localizer["MyPortfolioTitle"],
+                    Description = _localizer["MyPortfolioDescription"],
+                    Link = "https://portfolio-lucas-hafner.onrender.com/",
+                    ImageURL = "/images/MyPortfolio.png"
+                },
+                new ProjectDTO
+                {
                     Title = _localizer["MariacelestebrunettiTitle"],
                     Description = _localizer["MariacelestebrunettiDescription"],
                     Link = "https://www.mariacelestebrunetti.com/",
                     ImageURL = "/images/mariacelestebrunetti.png"
-                },
-                new ProjectDTO
-                {
-                    Title = _localizer["AmazonTitle"],
-                    Description = _localizer["AmazonDescription"],
-                    Link = "https://www.amazon.com/",
-                    ImageURL = "/images/amazon.png"
-                },
-                new ProjectDTO
-                {
-                    Title = _localizer["NYTTitle"],
-                    Description = _localizer["NYTDescription"],
-                    Link = "https://www.nytimes.com/",
-                    ImageURL = "/images/nyt.png"
-                },
-                new ProjectDTO
-                {
-                    Title = _localizer["SteamTitle"],
-                    Description = _localizer["SteamDescription"],
-                    Link = "https://www.steampowered.com/",
-                    ImageURL = "/images/steam.png"
                 }
             };
         }
