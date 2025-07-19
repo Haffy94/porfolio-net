@@ -43,6 +43,11 @@ public class HomeController : Controller
         return RedirectToAction("Thanks");
     }
 
+    public IActionResult Knapp()
+    {
+        return View();
+    }
+
     [HttpPost]
     public IActionResult SetLanguage(string culture, string returnUrl)
     {

@@ -64,3 +64,69 @@
     border-radius: 15px !important;
   }
 }
+
+/* === KNAPP SECTION STYLES === */
+.knapp-section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+/* Encapsulados dentro de .knapp-section */
+.knapp-section h1 {
+  color: #004080;
+  text-align: center;
+}
+
+.knapp-section h2 {
+  color: #0066cc;
+  margin-top: 30px;
+}
+
+.knapp-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.knapp-section ul {
+  margin-left: 1rem;
+}
+
+.knapp-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.knapp-section th,
+.knapp-section td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.knapp-section th {
+  background-color: #e0f0ff;
+}
+
+.knapp-section .emoji {
+  font-size: 1.3rem;
+  margin-right: 6px;
+}
+
+.knapp-section .summary-table {
+  margin-top: 40px;
+}
+
+.knapp-section .footer {
+  margin-top: 40px;
+  font-style: italic;
+  text-align: center;
+  color: #555;
+}
