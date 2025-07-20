@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+
+  <data name="KnappTitle" xml:space="preserve">
+    <value>Residence Process in Austria</value>
+  </data>
+  <data name="KnappWelcome" xml:space="preserve">
+    <value>Welcome KNAPP Austria team</value>
+  </data>
+  <data name="KnappMyName" xml:space="preserve">
+    <value>My name is Lucas Hafner, I am a .NET developer.</value>
+  </data>
+  <data name="KnappWifeInfo" xml:space="preserve">
+    <value>I am married to Sofía Arzamendia, an Italian (naturalized) citizen, who is also in your selection process.</value>
+  </data>
+  <data name="KnappIntro" xml:space="preserve">
+    <value>I understand you'd like to know if I can be employed despite not being an EU citizen myself.</value>
+  </data>
+  <data name="KnappOptimisticMessage" xml:space="preserve">
+    <value>The short answer is yes! Not only is it possible to employ me without a work visa, but I can handle the entire process myself, and it can be completed within just a few business days.</value>
+  </data>
+  <data name="KnappStepsNotice" xml:space="preserve">
+    <value>Here is a step-by-step breakdown of the process I will personally follow (counting business days).</value>
+  </data>
+
+  <data name="StepsTitle" xml:space="preserve">
+    <value>Steps to follow</value>
+  </data>
+
+  <data name="Day1" xml:space="preserve">
+    <value>Day 1</value>
+  </data>
+  <data name="Day1Details" xml:space="preserve">
+    <value>We arrive in Austria and enter together: she as an EU citizen with her Italian passport, and I as her husband, an Argentine citizen. Although we are already married, I am considered a tourist until she registers her residence.</value>
+  </data>
+
+  <data name="Day2" xml:space="preserve">
+    <value>Day 2</value>
+  </data>
+  <data name="Day2Detail1" xml:space="preserve">
+    <value>We register our address (Meldezettel) at the local municipality.</value>
+  </data>
+  <data name="Day2Detail2" xml:space="preserve">
+    <value>My wife applies for the Anmeldebescheinigung as a resident EU citizen.</value>
+  </data>
+
+  <data name="Day3" xml:space="preserve">
+    <value>Day 3</value>
+  </data>
+  <data name="Day3Detail1" xml:space="preserve">
+    <value>Once my wife obtains her Anmeldebescheinigung, I can apply for the Aufenthaltskarte (residence permit as a family member of an EU citizen).</value>
+  </data>
+  <data name="Day3Detail2" xml:space="preserve">
+    <value>After that, a confirmation of application in progress can be requested, which allows me to work in Graz.</value>
+  </data>
+
+  <data name="TravelQuestion" xml:space="preserve">
+    <value>Can I travel alone within Europe and nearby once employed?</value>
+  </data>
+  <data name="TravelAnswer1" xml:space="preserve">
+    <value>Yes, as the husband of a European citizen with legal residence in Austria, I can travel alone within the Schengen area for business or tourism.</value>
+  </data>
+  <data name="TravelAnswer2" xml:space="preserve">
+    <value>As an Argentine citizen, I can enter the Schengen zone visa-free for up to 90 days in any 180-day period, which allows short trips with no problem. Although my wife’s residence does not grant me special entry rights, my Argentine passport allows me to enter as a tourist or for temporary business.</value>
+  </data>
+  <data name="TravelAnswer3" xml:space="preserve">
+    <value>I only need to carry a copy of our marriage certificate and documents proving the family relationship.</value>
+  </data>
+
+  <data name="OfficesTitle" xml:space="preserve">
+    <value>Where I would do the paperwork in Graz</value>
+  </data>
+  <data name="AddressMeldezettel" xml:space="preserve">
+    <value>Address registration (Meldezettel) and Anmeldebescheinigung:</value>
+  </data>
+  <data name="AddressMeldezettelDetails" xml:space="preserve">
+    <value>Rathausgasse 1, 8010 Graz, Austria | Phone: +43 316 872-0 | Mon–Fri: 8:00 - 16:00</value>
+  </data>
+  <data name="AddressAufenthaltskarte" xml:space="preserve">
+    <value>Application for Aufenthaltskarte (residence permit):</value>
+  </data>
+  <data name="AddressAufenthaltskarteDetails" xml:space="preserve">
+    <value>Raubergasse 10, 8010 Graz, Austria | Phone: +43 316 877-0 | Mon–Fri: 8:00 - 12:00 &amp; 13:00 - 15:00</value>
+  </data>
+
+  <data name="SourcesTitle" xml:space="preserve">
+    <value>Sources of my research</value>
+  </data>
+  <data name="Source1" xml:space="preserve">
+    <value>Work in Austria - Right of residence for EU/EEA nationals</value>
+  </data>
+  <data name="Source2" xml:space="preserve">
+    <value>Migration.gv.at - Mobility within the EU</value>
+  </data>
+
+  <data name="KnappConfidentialNote" xml:space="preserve">
+    <value>This explanation is intended for KNAPP’s hiring team only. Please do not share the password, as this file contains personal information.</value>
+  </data>
+
+  <data name="PromptPassword" xml:space="preserve">
+    <value>Enter the password to view the information</value>
+  </data>
+  <data name="PromptCancelled" xml:space="preserve">
+    <value>Access cancelled</value>
+  </data>
+  <data name="PromptRetry" xml:space="preserve">
+    <value>Incorrect password. Remaining attempts: </value>
+  </data>
+  <data name="PromptBlocked" xml:space="preserve">
+    <value>You have exceeded the number of attempts. Access denied.</value>
+  </data>
+</root>
